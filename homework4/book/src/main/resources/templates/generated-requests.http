@@ -1,0 +1,32 @@
+###
+GET http://localhost:8080/books/{{id}}
+###
+GET http://localhost:8080/books/1
+###
+POST http://localhost:8080/books/add
+Content-Type: application/json
+
+{"id":  "6",
+  "title" : "new book"
+}
+
+###
+GET http://localhost:8080/books/search/{{term}}
+###
+GET http://localhost:8080/books/search/JAVA
+
+
+###
+GET http://localhost:8080/students
+###
+GET http://localhost:8080/students/{id}
+###
+GET http://localhost:8080/students/1
+###
+POST http://localhost:8080/students/add
+Content-Type: application/json
+
+{"id":  "4",
+"name" :  "Park",
+"dept" :  "d"
+}
